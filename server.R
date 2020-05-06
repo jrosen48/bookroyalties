@@ -4,8 +4,8 @@ library(shiny)
 shinyServer(function(input, output) {
   
   observeEvent(input$run, {
-    total_royalties <- (input$book_price * input$books_sold) * input$royalty_pct
-    per_author_royalties <- (input$book_price * input$books_sold) * (input$royalty_pct / input$n_authors)
+    total_royalties <- (input$book_price * input$books_sold) * (input$royalty_pct/100)
+    per_author_royalties <- (input$book_price * input$books_sold) * ((input$royalty_pct/100) / input$n_authors)
     
     output$total_royalties <- renderText({
       total_royalties

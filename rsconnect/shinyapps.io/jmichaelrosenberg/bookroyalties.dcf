@@ -1,0 +1,12 @@
+name: bookroyalties
+title: bookroyalties
+username:
+account: jmichaelrosenberg
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2255496
+bundleId: 3113408
+url: https://jmichaelrosenberg.shinyapps.io/bookroyalties/
+when: 1588808583.07113
+asMultiple: FALSE
+asStatic: FALSE

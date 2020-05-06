@@ -25,16 +25,18 @@ shinyUI(pageWithSidebar(
     numericInput("royalty_pct", 
                  "Royalty (%):", 
                  min = 0,
-                 max = 1, 
-                 value = .10),
+                 max = 100, 
+                 value = 10),
     actionButton("run",
-                 "Run")
+                 "Run"),
+    p(),
+    p("Source: https://github.com/jrosen48/bookroyalties")
   ),
 
   mainPanel(
     h3("Total Royalties"),
     textOutput("total_royalties"),
     h3("Per Author Royalties"),
-    textOutput("per_author_royalties")
+    textOutput("per_author_royalties"),
   )
 ))
